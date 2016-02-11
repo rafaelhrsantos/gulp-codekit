@@ -1,5 +1,3 @@
-[![npm version](https://badge.fury.io/js/gulp-codekit.svg)](https://badge.fury.io/js/gulp-codekit)
-
 #gulp-codekit [![NPM version][npm-image]][npm-url] ![Travis build][travis-image]
 >Makes inclusion of files a breeze.  
 Supports CodeKit and Prepros include directives.

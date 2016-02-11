@@ -1,10 +1,11 @@
 {
-  "name": "gulp-include",
-  "version": "2.1.0",
-  "description": "Makes inclusion of files a breeze. Enables functionality similar to that of snockets / sprockets or other file insertion compilation tools.",
-  "homepage": "http://github.com/wiledal/gulp-include",
+  "name": "gulp-codekit",
+  "version": "0.1.0",
+  "description": "Makes inclusion of files a breeze. Supports CodeKit and Prepros includes. Forked from http://github.com/wiledal/gulp-include by Hugo Wiledal",
+  "homepage": "http://github.com/designbyadrian/gulp-codekit",
   "repository": {
     "type": "git",
+    "url": "git://github.com/designbyadrian/gulp-codekit.git",
     "url": "git://github.com/wiledal/gulp-include.git"
   },
   "main": "index.js",
@@ -15,7 +16,7 @@
     "gulpplugin"
   ],
   "author": {
-    "name": "Hugo Wiledal"
+    "name": "Adrian von Gegerfelt"
   },
   "license": "MIT",
   "devDependencies": {

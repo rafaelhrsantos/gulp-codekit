@@ -1,9 +1,7 @@
-#WORK IN PROGRESS
-
-
 #gulp-include [![NPM version][npm-image]][npm-url] ![Travis build][travis-image]
 >Makes inclusion of files a breeze.  
-Enables functionality similar to that of snockets / sprockets or other file insertion compilation tools.
+Supports CodeKit and Prepros include directives.
+Heavily based on [gulp-include](http://github.com/wiledal/gulp-include) by [Hugo Wiledal](http://github.com/wiledal)
 
 > Made for gulp 3
 
@@ -51,6 +49,11 @@ Example directives:
 //=require vendor/jquery.js
 //=require vendor/**/*.js
 //=include relative/path/to/file.js
+// @codekit-append relative/path/to/file.js
+// @codekit-prepend relative/path/to/file.js
+
+> **Note:** Currently codekit-prepend does the same as codekit-append, and works like an include
+
 ```
 ```css
 /*=include relative/path/to/file.css */
@@ -74,58 +77,9 @@ For instance, let's say you want to include `jquery.js` only once, and before an
 Note: This also works recursively. If for instance, for the example above, if another file in the folder `vendor` is also including `jquery.js` with the `require`-directive it will be ignored.
 
 ## Release log
-#### 2.1.0
-* Merged sourcemap support by [vetruvet](https://github.com/vetruvet)
-* Merged support for html-comments by [jelmerdemaat](https://github.com/jelmerdemaat)
-
-#### 2.0.3
-* Merged community fix by [shadow1runner](https://github.com/shadow1runner)
-
-#### 2.0.2
-* Updated replace to support specials [Riim](https://github.com/Riim)
-
-#### 2.0.1
-* Fixed an issue with indenting
-
-#### 2.0.0
-* Core rewritten to be slimmer and more comprehensive.
-* `require` and `include` no longer work the same. `require` will only include a file that hasn't been included yet. See readme for details.
-* Tests have been rewritten based on the old ones, but also to fit the new functionality
-* Deprecated `require_tree` and `require_directory` as they serve little purpose. Use globs (`path/to/**/*.xxx`) instead.
-
-#### 1.1.1
-* Merged community fix by [trolev](https://github.com/trolev)
-
-#### 1.1.0
-* Merged feature: Keep leading whitespaces by [maxgalbu](https://github.com/maxgalbu)
-
-#### 1.0.1
-* Fixed issue which caused extensions to be "remembered" if `gulp-include` ran multiple times in a row, resulting in lost includes
-
-#### 1.0.0
-* Merged major refactoring by [scottmas](https://github.com/scottmas) - Many thanks!
-	* Rewritten core (regex, replacing and file mashing)
-	* Glob support
-	* Recursive support
-	* Respecting indentation of included files
-
-* Upping version to 1.0.0 - seems fitting after such a large refactor
-
-#### 0.2.3
-* Merged community fixes by [platdesign](https://github.com/platdesign) and [cujojp](https://github.com/cujojp)
-
-#### 0.2.2
-* Updated regex directive to not collide with other requireing plugins, like browserify ([cwacek](https://github.com/cwacek))
-
-#### 0.2.1
-* Changed replace-method to fix issue when requiring a file that contained special characters ([juanghurtado](https://github.com/juanghurtado))
-
-#### 0.2.0
-* Added `require_tree`/`include_tree` (Thanks to [juanghurtado](https://github.com/juanghurtado)!)
-* Method now takes an `extensions` param for controlling what types of files to include
 
 #### 0.1.0
-* Basic include
+* Basic codekit-append
 
 ## Licence
 (MIT License)

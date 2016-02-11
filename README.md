@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/gulp-codekit.svg)](https://badge.fury.io/js/gulp-codekit)
+
 #gulp-codekit [![NPM version][npm-image]][npm-url] ![Travis build][travis-image]
 >Makes inclusion of files a breeze.  
 Supports CodeKit and Prepros include directives.
@@ -101,7 +103,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-[travis-image]: https://api.travis-ci.org/wiledal/gulp-include.png?branch=master
+[travis-image]: https://travis-ci.org/designbyadrian/gulp-codekit.svg?branch=master
 
-[npm-url]: https://npmjs.org/package/gulp-include
-[npm-image]: https://badge.fury.io/js/gulp-include.png
+[npm-url]: https://npmjs.org/package/gulp-codekit
+[npm-image]: https://badge.fury.io/js/gulp-codekit.svg

@@ -1,3 +1,6 @@
+#WORK IN PROGRESS
+
+
 #gulp-include [![NPM version][npm-image]][npm-url] ![Travis build][travis-image]
 >Makes inclusion of files a breeze.  
 Enables functionality similar to that of snockets / sprockets or other file insertion compilation tools.

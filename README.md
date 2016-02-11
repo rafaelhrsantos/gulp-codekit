@@ -1,17 +1,13 @@
-#gulp-include [![NPM version][npm-image]][npm-url] ![Travis build][travis-image]
+#gulp-codekit [![NPM version][npm-image]][npm-url] ![Travis build][travis-image]
 >Makes inclusion of files a breeze.  
 Supports CodeKit and Prepros include directives.
 Heavily based on [gulp-include](http://github.com/wiledal/gulp-include) by [Hugo Wiledal](http://github.com/wiledal)
-
-> Made for gulp 3
 
 ## Features
 * Concatenate files with full control
 * Respects indentation whitespace
 * Uses [globs](https://www.npmjs.com/package/glob) for simple path control
 * Works recursively (files can include files that can include files, and so on)
-
-*Warning: if you are updating from 1.x.x to 2.x.x, please read this readme to get up to date on the behavior of `gulp-include`*
 
 ## Installation
 ```shell

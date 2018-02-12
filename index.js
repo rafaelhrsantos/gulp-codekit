@@ -55,7 +55,7 @@ module.exports = function (params) {
 };
 
 function processInclude(content, filePath, sourceMap) {
-  var matches = content.match(/^(\s+)?(\/\/|\/\*|\#|\<\!\-\-)(\s+)?(\=|(\s)*\@codekit\-)(\s+)?(include|require|append|prepend)(.+$)/mg);
+  var matches = content.match(/^(\s+)?(\/\/|\/\*|\#|\<\!\-\-)(\s+)?(\=|(\s+)?\@codekit\-)(\s+)?(include|require|append|prepend)(.+$)/mg);
   var relativeBasePath = path.dirname(filePath);
 
   if (!matches) return {content: content, map: null};
@@ -100,6 +100,7 @@ function processInclude(content, filePath, sourceMap) {
       .replace(/(\s+)/gi, " ")
       .replace(/(\/\/|\/\*|\#)(\s+)?=(\s+)?/g, "")
       .replace(/(\*\/)$/gi, "")
+      .replace(/(\s+)\@/, "@")
       .replace(/['"]/g, "")
       .trim();
     var split = includeCommand.split(" ");
